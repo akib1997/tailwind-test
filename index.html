@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Test</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      input:checked + div {
+        border-color: border-blue-500;
+      }
+      input:checked + div svg {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="py-20 bg-white font-sans px-3 xl:h-screen">
+      <div class="max-w-sm md:max-w-5xl mx-auto">
+        <h1
+          class="
+            mt-2
+            text-3xl
+            leading-8
+            font-extrabold
+            tracking-tight
+            text-gray-900
+            sm:text-4xl
+            font-sans
+          "
+        >
+          Your 10 day goals 💪🏼
+        </h1>
+        <p class="mt-4 text-xl text-gray-500">
+          We've suggested a few goals here for you. Feel free to customize to
+          make them more inspiring! Check them off when complete to claim your
+          points!
+        </p>
+        <div class="grid md:grid-cols-3 gap-10 md:gap-16 my-16">
+          <!-- 1 -->
+          <div>
+            <div class="flex justify-between items-center mb-4 md:mb-8">
+              <div
+                class="
+                  bg-indigo-500
+                  shadow-lg
+                  w-12
+                  h-12
+                  flex
+                  items-center
+                  justify-center
+                  rounded-md
+                  text-white
+                "
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="trophy"
+                  class="w-6 h-6"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="flex justify-between mb-4 md:mb-8">
+              <h6 class="font-medium text-lg text-gray-700">
+                You Implemented 3 Profit Accelerators 💰
+              </h6>
+            </div>
+
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="A3-yes"
+                  checked
+                  name="A3-confirmation"
+                  value="yes"
+                  class="opacity-0 absolute h-6 w-6"
+                />
+                <div
+                  class="
+                    border-2
+                    rounded-full
+                    border-indigo-500
+                    w-6
+                    h-6
+                    flex flex-shrink-0
+                    justify-center
+                    items-center
+                    mr-2
+                    focus-within:border-indigo-500
+                  "
+                >
+                  <svg
+                    class="
+                      fill-current
+                      hidden
+                      w-3
+                      h-3
+                      text-blue-600
+                      pointer-events-none
+                    "
+                    version="1.1"
+                    viewBox="0 0 17 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <g
+                        transform="translate(-9 -11)"
+                        fill="#1F73F1"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <label for="A3-yes" class="select-none">Done it!</label>
+              </div>
+              <div
+                class="
+                  bg-indigo-700
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  w-8
+                  h-8
+                  relative
+                  ml-6
+                "
+              >
+                <span class="text-white inline-block">10</span>
+                <div
+                  class="
+                    uppercase
+                    font-bold
+                    text-xs
+                    absolute
+                    -right-4
+                    -top-4
+                    rounded-full
+                    text-indigo-900
+                    italic
+                    flex
+                    items-center
+                    justify-center
+                    w-6
+                    h-6
+                  "
+                >
+                  xp
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div>
+            <div class="flex justify-between items-center mb-4 md:mb-8">
+              <div
+                class="
+                  bg-indigo-500
+                  shadow-lg
+                  w-12
+                  h-12
+                  flex
+                  items-center
+                  justify-center
+                  rounded-md
+                  text-white
+                "
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="trophy"
+                  class="w-6 h-6"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                  ></path>
+                </svg>
+              </div>
+              <a
+                href="#"
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  w-8
+                  h-8
+                  rounded-full
+                  ml-2
+                  mr-6
+                  bg-gray-200
+                  text-gray-400
+                "
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="pen"
+                  class="w-4 h-4"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div class="flex justify-between mb-4 md:mb-8">
+              <h6 class="font-medium text-lg text-gray-700">
+                You Implemented 5 Profit Accelerators 💰💰
+              </h6>
+            </div>
+
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="A3-yes"
+                  checked
+                  name="A3-confirmation"
+                  value="yes"
+                  class="opacity-0 absolute h-6 w-6"
+                />
+                <div
+                  class="
+                    border-2
+                    rounded-full
+                    border-indigo-500
+                    w-6
+                    h-6
+                    flex flex-shrink-0
+                    justify-center
+                    items-center
+                    mr-2
+                    focus-within:border-indigo-500
+                  "
+                >
+                  <svg
+                    class="
+                      fill-current
+                      hidden
+                      w-3
+                      h-3
+                      text-blue-600
+                      pointer-events-none
+                    "
+                    version="1.1"
+                    viewBox="0 0 17 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <g
+                        transform="translate(-9 -11)"
+                        fill="#1F73F1"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <label for="A3-yes" class="select-none">Done it!</label>
+              </div>
+              <div
+                class="
+                  bg-indigo-700
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  w-8
+                  h-8
+                  relative
+                  ml-6
+                "
+              >
+                <span class="text-white inline-block">20</span>
+                <div
+                  class="
+                    uppercase
+                    font-bold
+                    text-xs
+                    absolute
+                    -right-4
+                    -top-4
+                    rounded-full
+                    text-indigo-900
+                    italic
+                    flex
+                    items-center
+                    justify-center
+                    w-6
+                    h-6
+                  "
+                >
+                  xp
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div>
+            <div class="flex justify-between items-center mb-4 md:mb-8">
+              <div
+                class="
+                  bg-indigo-400
+                  shadow-lg
+                  w-12
+                  h-12
+                  flex
+                  items-center
+                  justify-center
+                  rounded-md
+                  text-white
+                "
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="trophy"
+                  class="w-6 h-6"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                  ></path>
+                </svg>
+              </div>
+              <a
+                href="#"
+                class="
+                  flex
+                  items-center
+                  justify-center
+                  w-8
+                  h-8
+                  rounded-full
+                  ml-2
+                  mr-6
+                  bg-gray-100
+                  text-gray-300
+                "
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="pen"
+                  class="w-4 h-4"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                  ></path></svg
+              ></a>
+            </div>
+            <div class="flex justify-between mb-4 md:mb-8">
+              <h6 class="font-medium text-lg text-gray-500">
+                You Implemented 10 Profit Accelerators 💰💰
+              </h6>
+            </div>
+
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <input
+                  type="checkbox"
+                  id="three"
+                  name="confirmation"
+                  value="yes"
+                  class="opacity-0 absolute h-6 w-6"
+                />
+                <div
+                  class="
+                    border-2
+                    rounded-full
+                    border-indigo-400
+                    w-6
+                    h-6
+                    flex flex-shrink-0
+                    justify-center
+                    items-center
+                    mr-2
+                    focus-within:border-indigo-500
+                  "
+                >
+                  <svg
+                    class="
+                      fill-current
+                      hidden
+                      w-3
+                      h-3
+                      text-blue-600
+                      pointer-events-none
+                    "
+                    version="1.1"
+                    viewBox="0 0 17 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g fill="none" fill-rule="evenodd">
+                      <g
+                        transform="translate(-9 -11)"
+                        fill="#1F73F1"
+                        fill-rule="nonzero"
+                      >
+                        <path
+                          d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <label for="yes" class="select-none">Done it!</label>
+              </div>
+              <div
+                class="
+                  bg-indigo-500
+                  shadow-lg
+                  rounded-full
+                  flex
+                  items-center
+                  justify-center
+                  w-8
+                  h-8
+                  relative
+                  ml-6
+                "
+              >
+                <span class="text-white inline-block">30</span>
+                <div
+                  class="
+                    uppercase
+                    font-bold
+                    text-xs
+                    absolute
+                    -right-4
+                    -top-4
+                    rounded-full
+                    text-indigo-700
+                    italic
+                    flex
+                    items-center
+                    justify-center
+                    w-6
+                    h-6
+                  "
+                >
+                  xp
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ol class="grid grid-cols-3 items-center mb-8">
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-full bg-indigo-600"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                relative
+                w-8
+                h-8
+                flex
+                items-center
+                justify-center
+                bg-indigo-600
+                rounded-full
+                hover:text-indigo-9
+                italic
+              "
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Step 1</span>
+            </a>
+          </li>
+
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-1/2 bg-indigo-600"></div>
+              <div class="h-0.5 w-1/2 bg-gray-300"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                relative
+                w-8
+                h-8
+                mx-auto
+                flex
+                items-center
+                justify-center
+                bg-white
+                border-2 border-indigo-600
+                rounded-full
+              "
+              aria-current="step"
+            >
+              <span
+                class="h-2.5 w-2.5 bg-indigo-600 rounded-full"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Step 3</span>
+            </a>
+          </li>
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-full bg-gray-300"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                group
+                relative
+                w-8
+                h-8
+                ml-auto
+                flex
+                items-center
+                justify-center
+                bg-white
+                border-2 border-gray-300
+                rounded-full
+                hover:border-gray-400
+              "
+            >
+              <span
+                class="
+                  h-2.5
+                  w-2.5
+                  bg-transparent
+                  rounded-full
+                  group-hover:bg-gray-300
+                "
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Step 5</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section class="py-20 bg-white font-sans px-3 xl:h-screen">
+      <div class="max-w-sm md:max-w-5xl mx-auto text-center">
+        <h1
+          class="
+            mt-2
+            text-3xl
+            leading-8
+            font-extrabold
+            tracking-tight
+            text-gray-900
+            sm:text-4xl
+            font-sans
+          "
+        >
+          Your 10 day goals 💪🏼
+        </h1>
+        <p class="mt-4 text-xl text-gray-500">
+          We've suggested a few goals here for you. Feel free to customize to
+          make them more inspiring! Check them off when complete to claim your
+          points!
+        </p>
+        <div class="grid md:grid-cols-3 gap-10 my-16">
+          <!-- 1 -->
+          <div class="pt-6">
+            <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-3
+                      bg-purple-500
+                      text-white
+                      rounded-md
+                      shadow-lg
+                    "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="trophy"
+                      class="w-6 h-6"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="my-8 text-lg font-medium text-gray-900 tracking-tight"
+                >
+                  You Implemented 3 Profit Accelerators 💰
+                </h3>
+                <div class="flex items-center justify-center">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="A3yes"
+                      checked
+                      name="confirmation"
+                      value="yes"
+                      class="opacity-0 absolute h-6 w-6"
+                    />
+                    <div
+                      class="
+                        border-2
+                        rounded-full
+                        border-purple-500
+                        w-6
+                        h-6
+                        flex flex-shrink-0
+                        justify-center
+                        items-center
+                        mr-2
+                        focus-within:border-purple-500
+                      "
+                    >
+                      <svg
+                        class="
+                          fill-current
+                          hidden
+                          w-3
+                          h-3
+                          text-purple-500
+                          pointer-events-none
+                        "
+                        version="1.1"
+                        viewBox="0 0 17 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g fill="none" fill-rule="evenodd">
+                          <g
+                            transform="translate(-9 -11)"
+                            fill="#1F73F1"
+                            fill-rule="nonzero"
+                          >
+                            <path
+                              d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <label for="A3-yes" class="select-none">Done it!</label>
+                  </div>
+                  <div
+                    class="
+                      bg-purple-700
+                      rounded-full
+                      flex
+                      items-center
+                      justify-center
+                      w-8
+                      h-8
+                      relative
+                      ml-6
+                    "
+                  >
+                    <span class="text-white inline-block">10</span>
+                    <div
+                      class="
+                        uppercase
+                        font-bold
+                        text-xs
+                        absolute
+                        -right-5
+                        -top-0.5
+                        rounded-full
+                        text-purple-900
+                        italic
+                        flex
+                        items-center
+                        justify-center
+                        w-6
+                        h-6
+                      "
+                    >
+                      xp
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="pt-6">
+            <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div class="flex justify-evenly">
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-3
+                      bg-purple-500
+                      text-white
+                      rounded-md
+                      shadow-lg
+                    "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="trophy"
+                      class="w-6 h-6"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <button
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-3
+                      rounded-md
+                      shadow-lg
+                      border border-gray-300
+                      bg-white
+                      text-gray-700
+                      focus:outline-none
+                    "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="pen"
+                      class="w-4 h-4"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <h3
+                  class="my-8 text-lg font-medium text-gray-900 tracking-tight"
+                >
+                  You Implemented 5 Profit Accelerators 💰💰
+                </h3>
+
+                <div class="flex items-center justify-center">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="A3yes"
+                      checked
+                      name="confirmation"
+                      value="yes"
+                      class="opacity-0 absolute h-6 w-6"
+                    />
+                    <div
+                      class="
+                        border-2
+                        rounded-full
+                        border-purple-500
+                        w-6
+                        h-6
+                        flex flex-shrink-0
+                        justify-center
+                        items-center
+                        mr-2
+                        focus-within:border-purple-500
+                      "
+                    >
+                      <svg
+                        class="
+                          fill-current
+                          hidden
+                          w-3
+                          h-3
+                          text-purple-500
+                          pointer-events-none
+                        "
+                        version="1.1"
+                        viewBox="0 0 17 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g fill="none" fill-rule="evenodd">
+                          <g
+                            transform="translate(-9 -11)"
+                            fill="#1F73F1"
+                            fill-rule="nonzero"
+                          >
+                            <path
+                              d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <label for="A3-yes" class="select-none">Done it!</label>
+                  </div>
+                  <div
+                    class="
+                      bg-purple-700
+                      rounded-full
+                      flex
+                      items-center
+                      justify-center
+                      w-8
+                      h-8
+                      relative
+                      ml-6
+                    "
+                  >
+                    <span class="text-white inline-block">10</span>
+                    <div
+                      class="
+                        uppercase
+                        font-bold
+                        text-xs
+                        absolute
+                        -right-5
+                        -top-0.5
+                        rounded-full
+                        text-purple-900
+                        italic
+                        flex
+                        items-center
+                        justify-center
+                        w-6
+                        h-6
+                      "
+                    >
+                      xp
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="pt-6">
+            <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div class="flex justify-evenly">
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-3
+                      bg-purple-500
+                      text-white
+                      rounded-md
+                      shadow-lg
+                    "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="trophy"
+                      class="w-6 h-6"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 35.7 22.5 72.4 61.9 100.7 31.5 22.7 69.8 37.1 110 41.7C203.3 338.5 240 360 240 360v72h-48c-35.3 0-64 20.7-64 56v12c0 6.6 5.4 12 12 12h296c6.6 0 12-5.4 12-12v-12c0-35.3-28.7-56-64-56h-48v-72s36.7-21.5 68.1-73.6c40.3-4.6 78.6-19 110-41.7 39.3-28.3 61.9-65 61.9-100.7V88c0-13.3-10.7-24-24-24zM99.3 192.8C74.9 175.2 64 155.6 64 144v-16h64.2c1 32.6 5.8 61.2 12.8 86.2-15.1-5.2-29.2-12.4-41.7-21.4zM512 144c0 16.1-17.7 36.1-35.3 48.8-12.5 9-26.7 16.2-41.8 21.4 7-25 11.8-53.6 12.8-86.2H512v16z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <button
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      p-3
+                      rounded-md
+                      shadow-lg
+                      border border-gray-300
+                      bg-white
+                      text-gray-700
+                      focus:outline-none
+                    "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="pen"
+                      class="w-4 h-4"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <h3
+                  class="my-8 text-lg font-medium text-gray-900 tracking-tight"
+                >
+                  You Implemented 10 Profit Accelerators 💰💰💰
+                </h3>
+
+                <div class="flex items-center justify-center">
+                  <div class="flex items-center">
+                    <input
+                      type="checkbox"
+                      id="A3yes"
+                      name="confirmation"
+                      value="yes"
+                      class="opacity-0 absolute h-6 w-6"
+                    />
+                    <div
+                      class="
+                        border-2
+                        rounded-full
+                        border-purple-500
+                        w-6
+                        h-6
+                        flex flex-shrink-0
+                        justify-center
+                        items-center
+                        mr-2
+                        focus-within:border-purple-500
+                      "
+                    >
+                      <svg
+                        class="
+                          fill-current
+                          hidden
+                          w-3
+                          h-3
+                          text-purple-500
+                          pointer-events-none
+                        "
+                        version="1.1"
+                        viewBox="0 0 17 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g fill="none" fill-rule="evenodd">
+                          <g
+                            transform="translate(-9 -11)"
+                            fill="#1F73F1"
+                            fill-rule="nonzero"
+                          >
+                            <path
+                              d="m25.576 11.414c0.56558 0.55188 0.56558 1.4439 0 1.9961l-9.404 9.176c-0.28213 0.27529-0.65247 0.41385-1.0228 0.41385-0.37034 0-0.74068-0.13855-1.0228-0.41385l-4.7019-4.588c-0.56584-0.55188-0.56584-1.4442 0-1.9961 0.56558-0.55214 1.4798-0.55214 2.0456 0l3.679 3.5899 8.3812-8.1779c0.56558-0.55214 1.4798-0.55214 2.0456 0z"
+                            />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                    <label for="A3-yes" class="select-none">Done it!</label>
+                  </div>
+                  <div
+                    class="
+                      bg-purple-700
+                      rounded-full
+                      flex
+                      items-center
+                      justify-center
+                      w-8
+                      h-8
+                      relative
+                      ml-6
+                    "
+                  >
+                    <span class="text-white inline-block">30</span>
+                    <div
+                      class="
+                        uppercase
+                        font-bold
+                        text-xs
+                        absolute
+                        -right-5
+                        -top-0.5
+                        rounded-full
+                        text-purple-900
+                        italic
+                        flex
+                        items-center
+                        justify-center
+                        w-6
+                        h-6
+                      "
+                    >
+                      xp
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ol class="grid grid-cols-3 items-center mb-8">
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-full bg-purple-600"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                relative
+                w-8
+                h-8
+                flex
+                items-center
+                justify-center
+                bg-purple-600
+                rounded-full
+                hover:text-purple-900
+                italic
+              "
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="sr-only">Step 1</span>
+            </a>
+          </li>
+
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-1/2 bg-purple-600"></div>
+              <div class="h-0.5 w-1/2 bg-gray-300"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                relative
+                w-8
+                h-8
+                mx-auto
+                flex
+                items-center
+                justify-center
+                bg-white
+                border-2 border-purple-600
+                rounded-full
+              "
+              aria-current="step"
+            >
+              <span
+                class="h-2.5 w-2.5 bg-purple-600 rounded-full"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Step 3</span>
+            </a>
+          </li>
+          <li class="relative">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+              <div class="h-0.5 w-full bg-gray-300"></div>
+            </div>
+            <a
+              href="#"
+              class="
+                group
+                relative
+                w-8
+                h-8
+                ml-auto
+                flex
+                items-center
+                justify-center
+                bg-white
+                border-2 border-gray-300
+                rounded-full
+                hover:border-gray-400
+              "
+            >
+              <span
+                class="
+                  h-2.5
+                  w-2.5
+                  bg-transparent
+                  rounded-full
+                  group-hover:bg-gray-300
+                "
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Step 5</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </body>
+</html>
